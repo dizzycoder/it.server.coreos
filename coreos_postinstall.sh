@@ -1,4 +1,11 @@
+#!/bin/bash
+
 #https://raw.githubusercontent.com/dizzycoder/it.server.coreos/master/coreos_postinstall.sh
+
+echo "fun" > ~/post_install.log
+
+exit 1
+
 cd
 wget https://raw.githubusercontent.com/varasys/corezfs/master/corezfs && chmod +x ./corezfs && sudo ./corezfs install
 
